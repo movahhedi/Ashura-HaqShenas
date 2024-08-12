@@ -1,0 +1,11 @@
+@font-face {
+	font-family: "Nabi";
+	src:
+		url("Nabi.woff2") format("woff2"),
+		url("Nabi.woff") format("woff"),
+		url("Nabi.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+

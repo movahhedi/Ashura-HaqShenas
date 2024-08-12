@@ -1,0 +1,153 @@
+@use "Config" as *;
+@import "../fonts/Neirizi/stylesheet.css";
+@import "../fonts/Nabi/stylesheet.css";
+
+$Font-Persian: "Vazirmatn FD", Vazirmatn, sans-serif;
+$Font-Arabic: Neirizi, Nabi, "Vazirmatn FD", Vazirmatn, sans-serif;
+
+* {
+	min-width: 0;
+	min-height: 0;
+}
+
+:root {
+	direction: rtl;
+}
+
+#mainWrapper {
+	overflow: auto;
+	height: 100%;
+	direction: ltr;
+}
+
+#main {
+	direction: rtl;
+	height: 100%;
+}
+
+#nav {
+	width: 100%;
+	padding: 20px;
+	display: grid;
+	grid-template:
+		"next siteName prev" auto
+		"next pageName prev" auto
+		/ auto 1fr auto;
+	place-content: center;
+	place-items: center;
+}
+
+#navBox {
+	text-align: center;
+	width: 100%;
+
+	#siteName {
+		font-size: 9px;
+		grid-area: siteName;
+		margin-bottom: 8px;
+	}
+	#pageName {
+		font-size: 18px;
+		grid-area: pageName;
+	}
+}
+
+.pageControl {
+	// padding: 40px;
+	color: #007fff;
+	$Size: 30px;
+	width: $Size;
+	height: $Size;
+	background: none;
+
+	&.prev {
+		color: #0080ff85;
+	}
+}
+
+#progressBox {
+	// padding: 10px 50px;
+	padding: 10px;
+}
+
+#progressBar {
+	background-color: #0080ff3c;
+	border-radius: 10px;
+	overflow: hidden;
+	display: block;
+	margin-inline: auto;
+	max-width: 250px;
+	min-width: 70px;
+	direction: rtl;
+}
+
+#progressBarFill {
+	background-color: #007fff;
+	width: 50%;
+	height: 5px;
+}
+#progressText {
+	margin-top: 10px;
+	font-size: 10px;
+}
+
+.persian {
+	font-family: $Font-Persian;
+}
+
+.arabic {
+	font-family: $Font-Arabic;
+}
+
+// Pages
+
+.page {
+	width: 100%;
+	scrollbar-gutter: stable;
+	display: flex;
+	place-content: center;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.arabicText {
+	font-family: $Font-Arabic;
+	padding: 20px;
+
+	p {
+		font-size: 22px;
+	}
+
+	hr {
+		border-top: 1px solid #0080ff44;
+		margin: 20px;
+	}
+}
+
+#pageIntro {
+	text-align: center;
+	gap: 10px;
+
+	#introBismillah {
+		font-size: 12px;
+	}
+	#introTitle {
+		font-size: 40px;
+	}
+	#introSubtitle {
+		font-size: 15px;
+	}
+}
+
+#pageAllahAkbar {
+	.do100 {
+		text-align: center;
+		font-weight: 300;
+		margin-bottom: 10px;
+	}
+	.allahAkbar {
+		font-size: 60px;
+		text-align: center;
+		margin-bottom: 10vh;
+	}
+}
