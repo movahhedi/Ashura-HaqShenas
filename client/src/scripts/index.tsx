@@ -20,12 +20,11 @@ const pager = (
 				className="pageControl prev"
 				onClick={() => {
 					currentPage--;
-					if (currentPage <= 0) {
+					if (currentPage < 0) {
 						currentPage = 0;
 					} else {
 						RenderPage(currentPage);
 					}
-					RenderPage(currentPage);
 				}}
 			>
 				<FontAwesome icon="arrow-right" />

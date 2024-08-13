@@ -27,7 +27,7 @@ $Font-Arabic: Neirizi, Nabi, "Vazirmatn FD", Vazirmatn, sans-serif;
 
 #nav {
 	width: 100%;
-	padding: 20px;
+	padding: 10px 20px;
 	display: grid;
 	grid-template:
 		"next siteName prev" auto
@@ -55,7 +55,7 @@ $Font-Arabic: Neirizi, Nabi, "Vazirmatn FD", Vazirmatn, sans-serif;
 .pageControl {
 	// padding: 40px;
 	color: #007fff;
-	$Size: 30px;
+	$Size: 40px;
 	width: $Size;
 	height: $Size;
 	background: none;
@@ -67,7 +67,7 @@ $Font-Arabic: Neirizi, Nabi, "Vazirmatn FD", Vazirmatn, sans-serif;
 
 #progressBox {
 	// padding: 10px 50px;
-	padding: 10px;
+	padding: 10px 10px 0;
 }
 
 #progressBar {
@@ -85,18 +85,25 @@ $Font-Arabic: Neirizi, Nabi, "Vazirmatn FD", Vazirmatn, sans-serif;
 	background-color: #007fff;
 	width: 50%;
 	height: 5px;
+	transition: 300ms;
 }
 #progressText {
 	margin-top: 10px;
 	font-size: 10px;
 }
 
-.persian {
-	font-family: $Font-Persian;
-}
-
 .arabic {
 	font-family: $Font-Arabic;
+}
+
+.persian {
+	font-family: $Font-Persian !important;
+}
+
+.persianInArabic {
+	font-family: $Font-Persian !important;
+	font-size: 16px;
+	color: #65b2ff;
 }
 
 // Pages
@@ -112,7 +119,9 @@ $Font-Arabic: Neirizi, Nabi, "Vazirmatn FD", Vazirmatn, sans-serif;
 
 .arabicText {
 	font-family: $Font-Arabic;
-	padding: 20px;
+	// padding: 20px;
+	padding: 0 10px;
+	line-height: 3;
 
 	p {
 		font-family: $Font-Arabic;
@@ -121,7 +130,11 @@ $Font-Arabic: Neirizi, Nabi, "Vazirmatn FD", Vazirmatn, sans-serif;
 
 	hr {
 		border-top: 1px solid #0080ff44;
-		margin: 20px;
+		margin: 10px;
+	}
+
+	.textChange {
+		color: #f52a2a;
 	}
 }
 
@@ -144,11 +157,24 @@ $Font-Arabic: Neirizi, Nabi, "Vazirmatn FD", Vazirmatn, sans-serif;
 	.do100 {
 		text-align: center;
 		font-weight: 300;
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 	}
 	.allahAkbar {
 		font-size: 60px;
 		text-align: center;
-		margin-bottom: 10vh;
+		margin-bottom: 8vh;
+	}
+}
+
+#pageNamaz {
+	place-content: center;
+	place-items: center;
+
+	h2 {
+		font-size: 40px;
+		margin-bottom: 10px;
+	}
+	h5 {
+		font-size: 20px;
 	}
 }

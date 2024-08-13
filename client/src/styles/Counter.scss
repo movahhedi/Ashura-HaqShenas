@@ -5,12 +5,13 @@
 	width: 100%;
 	display: flex;
 	place-content: center;
+	margin-top: 2vh;
 
 	.minus {
 		color: $Color-Accent;
 		line-height: 0;
 		background: none;
-		$Size: 30px;
+		$Size: 40px;
 		width: $Size;
 		height: $Size;
 		border: 2px solid $Color-Accent;
@@ -19,7 +20,7 @@
 		left: 20px;
 		transition: 300ms;
 
-		&:hover {
+		&:active {
 			background-color: $Color-Body-Light;
 		}
 	}
@@ -38,9 +39,18 @@
 		place-content: center;
 		transition: 300ms;
 
-		&:hover {
+		&:active {
 			background-color: $Color-Body-Light;
 		}
+	}
+
+	&.counterSmall .counterMain {
+		$Size: 100px;
+		width: $Size;
+		height: $Size;
+	}
+	&.counterSmall .counterText {
+		font-size: 40px;
 	}
 
 	.counterText {
