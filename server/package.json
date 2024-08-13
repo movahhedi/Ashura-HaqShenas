@@ -1,23 +1,23 @@
 {
-	"name": "<FILL>-server",
+	"name": "ashura-haqshenas-server",
 	"version": "0.1.0",
 	"private": true,
-	"description": "<FILL>",
-	"homepage": "<FILL>",
+	"description": "A better way to maintain your website.",
+	"homepage": "https://github.com/movahhedi/ashura-haqshenas",
 	"bugs": {
-		"url": "<FILL>"
+		"url": "https://github.com/movahhedi/ashura-haqshenas/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "<FILL>"
+		"url": "https://github.com/movahhedi/ashura-haqshenas"
 	},
-	"license": "<FILL>",
-	"author": "<FILL>",
+	"license": "GPL-3.0-only",
+	"author": "Shahab Movahhedi",
 	"contributors": [
 		{
-			"name": "<FILL>",
-			"email": "<FILL>",
-			"url": "<FILL>"
+			"name": "Shahab Movahhedi",
+			"email": "dev@shmovahhedi.com",
+			"url": "https://shmovahhedi.com/"
 		}
 	],
 	"type": "module",
