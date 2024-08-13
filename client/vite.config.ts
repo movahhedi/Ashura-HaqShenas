@@ -20,7 +20,7 @@ export default defineConfig({
 
 	root: "src",
 	publicDir: "../public",
-	base: "",
+	base: "/",
 	build: {
 		minify: "terser",
 		terserOptions: {
