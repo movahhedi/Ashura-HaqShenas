@@ -3,3 +3,8 @@
 
 /.yarn/releases/** binary
 /.yarn/plugins/** binary
+
+*.eot binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
