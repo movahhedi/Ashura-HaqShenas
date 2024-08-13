@@ -1,4 +1,4 @@
-import Text from "../Data/Laan1.md?raw";
+import Text from "../Texts/Laan1.md?raw";
 
 import { RenderMarkdown } from "./RenderMarkdown";
 

@@ -1,4 +1,4 @@
-import Text from "../Data/Salam1.md?raw";
+import Text from "../Texts/Salam1.md?raw";
 
 import { RenderMarkdown } from "./RenderMarkdown";
 
