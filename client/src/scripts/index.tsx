@@ -12,7 +12,7 @@ import "../fonts/Neirizi/stylesheet.css";
 import "../fonts/Nabi/stylesheet.css";
 import("@fortawesome/fontawesome-free/css/all.min.css");
 
-let currentPage = 0;
+let currentPage = +(localStorage.getItem("page") || 0);
 
 const app = document.getElementById("app")!;
 const pager = (
@@ -94,4 +94,4 @@ async function RenderPage(pageNumber: number) {
 app.append(pager);
 app.append(<div id="mainWrapper">{main}</div>);
 
-RenderPage(+(localStorage.getItem("page") || 0));
+RenderPage(currentPage);
