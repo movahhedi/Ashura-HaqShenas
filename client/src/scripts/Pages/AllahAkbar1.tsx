@@ -6,7 +6,7 @@ export default function () {
 			<h4 class="do100 persianInArabic">100 مرتبه</h4>
 			<p class="allahAkbar arabic">اَللّهُ اَکبَر</p>
 
-			<Counter />
+			<Counter counterName="AllahAkbar1" />
 		</div>
 	);
 }

@@ -1,71 +1,74 @@
-import Page1 from "./1";
-import Page2 from "./2";
-import Page3 from "./3";
-import Page4 from "./4";
-import Page5 from "./5";
-import Page6 from "./6";
-import Page7 from "./7";
-import Page8 from "./8";
-import Page9 from "./9";
-import Page10 from "./10";
-import Page11 from "./11";
-import Page12 from "./12";
+/* eslint-disable perfectionist/sort-imports */
+import Bismillah from "./Bismillah";
+import AllahAkbar1 from "./AllahAkbar1";
+import Salam1 from "./Salam1";
+import Laan1 from "./Laan1";
+import Full1 from "./Full1";
+import NamazHedyeh from "./NamazHedyeh";
+import AllahAkbar2 from "./AllahAkbar1";
+import Full2 from "./Full2";
+import Laan100 from "./Laan100";
+import Salam100 from "./Salam100";
+import Khos from "./Khos";
+import Sajdeh from "./Sajdeh";
+import NamazZiarat from "./NamazZiarat";
+import Sadaqeh from "./Sadaqeh";
 
 export const pages = [
 	{
 		name: "بسم الله",
-		render: Page1,
+		render: Bismillah,
 	},
 	{
 		name: "100 الله اکبر",
-		render: Page2,
+		render: AllahAkbar1,
 	},
 	{
 		name: "یک سلام",
-		render: Page3,
+		render: Salam1,
 	},
 	{
 		name: "یک لعن",
-		render: Page4,
+		render: Laan1,
 	},
 	{
 		name: "ابتدای زیارت",
-		render: Page5,
+		render: Full1,
 	},
 	{
 		name: "نماز هدیه",
-		render: Page6,
+		render: NamazHedyeh,
 	},
 	{
 		name: "100 الله اکبر",
-		render: Page2,
+		render: AllahAkbar2,
 	},
 	{
 		name: "زیارت کامل",
-		render: Page5,
+		render: Full2,
 	},
 	{
 		name: "100 لعن",
-		render: Page7,
+		render: Laan100,
 	},
 	{
 		name: "100 سلام",
-		render: Page8,
+		render: Salam100,
 	},
 	{
 		name: "ادامه زیارت",
-		render: Page9,
+		render: Khos,
 	},
 	{
 		name: "سجده",
-		render: Page10,
+		render: Sajdeh,
 	},
 	{
 		name: "نماز زیارت",
-		render: Page11,
+		render: NamazZiarat,
 	},
 	{
 		name: "صدقه",
-		render: Page12,
+		render: Sadaqeh,
 	},
 ] as const;

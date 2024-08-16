@@ -8,7 +8,7 @@ export default function () {
 		<div class="page">
 			<p class="arabicText" innerHTML={RenderMarkdown(Text)}></p>
 
-			<Counter small />
+			<Counter counterName="Salam100" small />
 		</div>
 	);
 }
