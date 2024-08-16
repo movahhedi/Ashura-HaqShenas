@@ -5,7 +5,7 @@ import Salam1 from "./Salam1";
 import Laan1 from "./Laan1";
 import Full1 from "./Full1";
 import NamazHedyeh from "./NamazHedyeh";
-import AllahAkbar2 from "./AllahAkbar1";
+import AllahAkbar2 from "./AllahAkbar2";
 import Full2 from "./Full2";
 import Laan100 from "./Laan100";
 import Salam100 from "./Salam100";
