@@ -8,6 +8,8 @@ import { pages } from "./Pages";
 import "../styles/ImportAfter.scss";
 import "vazirmatn/misc/Farsi-Digits/Vazirmatn-FD-font-face.css";
 // import "vazirmatn/Vazirmatn-font-face.css";
+import "../fonts/Neirizi/stylesheet.css";
+import "../fonts/Nabi/stylesheet.css";
 import("@fortawesome/fontawesome-free/css/all.min.css");
 
 let currentPage = 0;
