@@ -34,13 +34,13 @@ const pager = (
 
 			<div id="navBox">
 				<h5 id="siteName">چله زیارت عاشورای آیت‌الله حق‌شناس</h5>
-				<h2 id="pageName">سلام زیارت عاشورا</h2>
+				<h2 id="pageName"></h2>
 
 				<div id="progressBox">
 					<div id="progressBar">
 						<div id="progressBarFill"></div>
 					</div>
-					<h6 id="progressText">صفحه 1 از 10</h6>
+					<h6 id="progressText"></h6>
 				</div>
 			</div>
 
