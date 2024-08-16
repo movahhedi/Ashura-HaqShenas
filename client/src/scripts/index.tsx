@@ -28,6 +28,10 @@ const pager = (
 						RenderPage(currentPage);
 					}
 				}}
+				onContextMenu={() => {
+					currentPage = 0;
+					RenderPage(currentPage);
+				}}
 			>
 				<FontAwesome icon="arrow-right" />
 			</button>
@@ -54,6 +58,10 @@ const pager = (
 						RenderPage(currentPage);
 					}
 				}}
+				onContextMenu={() => {
+					currentPage = pages.length - 1;
+					RenderPage(currentPage);
+				}}
 			>
 				<FontAwesome icon="arrow-left" />
 			</button>
@@ -67,6 +75,8 @@ async function RenderPage(pageNumber: number) {
 	const page /* (() => JSX.Element) | undefined */ = pages[pageNumber];
 
 	if (page) {
+		localStorage.setItem("page", "" + pageNumber);
+
 		await fadeOut(main);
 
 		document.getElementById("progressBarFill")!.style.width =
@@ -84,4 +94,4 @@ async function RenderPage(pageNumber: number) {
 app.append(pager);
 app.append(<div id="mainWrapper">{main}</div>);
 
-RenderPage(0);
+RenderPage(+(localStorage.getItem("page") || 0));
