@@ -108,13 +108,8 @@ html {
 .app {
 	display: grid;
 	height: 100%;
-	grid-template: "aside main" 1fr / $Sidebar-Width 1fr;
 	overflow: hidden;
-
-	@include tablet {
-		display: grid;
-		grid-template: "aside" auto "main" 1fr / 1fr;
-	}
+	place-content: center;
 }
 
 .mainWrapper {

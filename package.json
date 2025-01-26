@@ -29,6 +29,7 @@
 		"i": "yarn install:root ; yarn install:client",
 		"postinstall": "yarn install:client",
 		"install:root": "yarn install",
+		"install:client": "cd client && yarn install",
 		"install": "cd client && yarn install",
 		"prepare": "cd client && yarn prepare",
 		"start": "concurrently -c \"bgBlue,bgGreen\" \"npm:client\"",

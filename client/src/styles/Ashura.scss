@@ -22,74 +22,10 @@ $Font-Arabic: Neirizi, Nabi, "Vazirmatn FD", Vazirmatn, sans-serif;
 
 #main {
 	direction: rtl;
-	height: 100%;
-}
 
-#nav {
-	width: 100%;
-	padding: 10px 20px;
-	display: grid;
-	grid-template:
-		"next siteName prev" auto
-		"next pageName prev" auto
-		/ auto 1fr auto;
-	place-content: center;
-	place-items: center;
-}
-
-#navBox {
-	text-align: center;
-	width: 100%;
-
-	#siteName {
-		font-size: 9px;
-		grid-area: siteName;
-		margin-bottom: 8px;
-	}
-	#pageName {
-		font-size: 18px;
-		grid-area: pageName;
-	}
-}
-
-.pageControl {
-	// padding: 40px;
-	color: #007fff;
-	$Size: 40px;
-	width: $Size;
-	height: $Size;
-	background: none;
-
-	&.prev {
-		color: #0080ff85;
-	}
-}
-
-#progressBox {
-	// padding: 10px 50px;
-	padding: 10px 10px 0;
-}
-
-#progressBar {
-	background-color: #0080ff3c;
-	border-radius: 10px;
-	overflow: hidden;
-	display: block;
-	margin-inline: auto;
-	max-width: 250px;
-	min-width: 70px;
-	direction: rtl;
-}
-
-#progressBarFill {
-	background-color: #007fff;
-	width: 100%;
-	height: 5px;
-	transition: 300ms;
-}
-#progressText {
-	margin-top: 10px;
-	font-size: 10px;
+	width: calc(29.7cm / 2);
+	height: 21cm;
+	border: 1px solid gray;
 }
 
 .arabic {
@@ -131,50 +67,5 @@ $Font-Arabic: Neirizi, Nabi, "Vazirmatn FD", Vazirmatn, sans-serif;
 	hr {
 		border-top: 1px solid #0080ff44;
 		margin: 10px;
-	}
-
-	.textChange {
-		color: #f52a2a;
-	}
-}
-
-#pageIntro {
-	text-align: center;
-	gap: 10px;
-
-	#introBismillah {
-		font-size: 12px;
-	}
-	#introTitle {
-		font-size: 40px;
-	}
-	#introSubtitle {
-		font-size: 15px;
-	}
-}
-
-#pageAllahAkbar {
-	.do100 {
-		text-align: center;
-		font-weight: 300;
-		margin-bottom: 20px;
-	}
-	.allahAkbar {
-		font-size: 60px;
-		text-align: center;
-		margin-bottom: 8vh;
-	}
-}
-
-#pageNamaz {
-	place-content: center;
-	place-items: center;
-
-	h2 {
-		font-size: 40px;
-		margin-bottom: 10px;
-	}
-	h5 {
-		font-size: 20px;
 	}
 }
