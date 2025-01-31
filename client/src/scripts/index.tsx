@@ -12,7 +12,9 @@ import "../fonts/Neirizi/stylesheet.css";
 import "../fonts/Nabi/stylesheet.css";
 import("@fortawesome/fontawesome-free/css/all.min.css");
 
-let currentPage = +(localStorage.getItem("page") || 0);
+const queryParams = new URLSearchParams(location.search);
+const page = queryParams.get("page");
+const currentPage = +(page || localStorage.getItem("page") || 0);
 
 const app = document.getElementById("app")!;
 const main = <main id="main"></main>;
