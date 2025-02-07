@@ -15,17 +15,18 @@ $Font-Arabic: Neirizi, Nabi, "Vazirmatn FD", Vazirmatn, sans-serif;
 }
 
 #mainWrapper {
-	overflow: auto;
-	height: 100%;
-	direction: ltr;
+	overflow: visible;
 }
 
 #main {
 	direction: rtl;
 
-	width: calc(29.7cm / 2);
-	height: 21cm;
-	border: 1px solid gray;
+	@media screen {
+		width: calc(29.7cm / 2);
+		// height: 21cm;
+
+		border: 1px solid gray;
+	}
 }
 
 .arabic {
@@ -46,18 +47,16 @@ $Font-Arabic: Neirizi, Nabi, "Vazirmatn FD", Vazirmatn, sans-serif;
 
 .page {
 	width: 100%;
-	scrollbar-gutter: stable;
 	display: flex;
 	place-content: center;
 	flex-direction: column;
-	min-height: 100%;
 }
 
 .arabicText {
 	font-family: $Font-Arabic;
 	// padding: 20px;
 	padding: 0 10px;
-	line-height: 3;
+	line-height: 2.5;
 	text-align: justify;
 
 	p {
@@ -66,7 +65,7 @@ $Font-Arabic: Neirizi, Nabi, "Vazirmatn FD", Vazirmatn, sans-serif;
 	}
 
 	.textChange {
-		border-bottom: 2px solid #65b2ff;
+		border-bottom: 1px solid #65b2ff;
 	}
 
 	hr {
@@ -76,31 +75,42 @@ $Font-Arabic: Neirizi, Nabi, "Vazirmatn FD", Vazirmatn, sans-serif;
 }
 
 .ayah {
-	$Size: 20px;
-	width: $Size;
+	// $Size: 26px;
+	width: auto;
 	height: auto;
 	aspect-ratio: 564/640;
 	// border-radius: 500px;
-	color: white;
+	color: #007fff;
 	display: inline-block;
 	text-align: center;
-	font-size: 12px;
-	margin-inline: 10px;
+	font-size: 24px;
+	margin-inline: 5px;
+	font-weight: 500;
+	// color: black;
 	// background: url("../images/ayah.png");
 	// background-position: center;
 	// background-attachment: fixed;
-	background-size: cover;
-	vertical-align: sub;
+	// background-size: cover;
+	// vertical-align: sub;
 	// background-color: #65b2ff;
+
+	/* &::after {
+		content: "۝";
+		color: #007fff;
+		font-size: 20px;
+		position: absolute;
+		$Size: 20px;
+		width: $Size;
+		height: auto;
+	} */
 
 	img {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
 		// mask-image: red;
-		filter: invert(66%) sepia(12%) saturate(3911%) hue-rotate(184deg) brightness(101%) contrast(100%);
+		filter: invert(66%) sepia(12%) saturate(3911%) hue-rotate(184deg) brightness(101%)
+			contrast(100%);
 		// mask-image: url("../images/ayah.png");
-
 	}
-
 }

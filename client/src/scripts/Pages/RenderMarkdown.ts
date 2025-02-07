@@ -20,9 +20,10 @@ export function RenderMarkdownInline(text: string) {
 	const changedText = text.replaceAll(
 		/\r?\n\r?\n/g,
 		`<span class="ayah">
-			<img src="${Ayah}" />
+		۝
 		</span>`,
 	);
+	// <img src="${Ayah}" />
 
 	console.log(changedText);
 
