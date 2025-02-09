@@ -1,8 +1,21 @@
 @use "../Config" as *;
 
+$MarginGutter: 30mm;
+$MarginNormal: 5mm;
+
 @page {
 	size: a5 portrait;
-	margin: 10mm 5mm;
+	margin: 10mm $MarginNormal;
+}
+
+@page :right {
+	margin-left: $MarginGutter;
+	margin-right: $MarginNormal;
+}
+
+@page :left {
+	margin-left: $MarginNormal;
+	margin-right: $MarginGutter;
 }
 
 :root,

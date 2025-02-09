@@ -44,7 +44,7 @@
 	"prettier.tabWidth": 4,
 	"prettier.doubleQuote": true,
 	"prettier.semi": true,
-	"prettier.printWidth": 90,
+	"prettier.printWidth": 200,
 	"prettier.singleQuote": false,
 	"prettier.singleAttributePerLine": false,
 	"prettier.jsxSingleQuote": false,

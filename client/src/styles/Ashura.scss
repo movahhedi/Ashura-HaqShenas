@@ -58,6 +58,7 @@ $Font-Arabic: Neirizi, Nabi, "Vazirmatn FD", Vazirmatn, sans-serif;
 	padding: 0 10px;
 	line-height: 2.5;
 	text-align: justify;
+	font-size: 18px;
 
 	p {
 		font-family: $Font-Arabic;
@@ -77,14 +78,15 @@ $Font-Arabic: Neirizi, Nabi, "Vazirmatn FD", Vazirmatn, sans-serif;
 .ayah {
 	// $Size: 26px;
 	width: auto;
-	height: auto;
-	aspect-ratio: 564/640;
+	height: 0;
+	// aspect-ratio: 564/640;
 	// border-radius: 500px;
 	color: #007fff;
 	display: inline-block;
 	text-align: center;
 	font-size: 24px;
 	margin-inline: 5px;
+	line-height: 0;
 	font-weight: 500;
 	// color: black;
 	// background: url("../images/ayah.png");
@@ -113,4 +115,9 @@ $Font-Arabic: Neirizi, Nabi, "Vazirmatn FD", Vazirmatn, sans-serif;
 			contrast(100%);
 		// mask-image: url("../images/ayah.png");
 	}
+}
+
+h3 {
+	color: #007fff;
+	text-align: center;
 }
