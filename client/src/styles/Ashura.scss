@@ -50,6 +50,10 @@ $Font-Arabic: Neirizi, Nabi, "Vazirmatn FD", Vazirmatn, sans-serif;
 	display: flex;
 	place-content: center;
 	flex-direction: column;
+	break-after: always;
+	page-break-after: always;
+	page-break-inside: avoid;
+	break-inside: avoid;
 }
 
 .arabicText {
@@ -58,7 +62,9 @@ $Font-Arabic: Neirizi, Nabi, "Vazirmatn FD", Vazirmatn, sans-serif;
 	padding: 0 10px;
 	line-height: 2.5;
 	text-align: justify;
-	font-size: 18px;
+	font-size: 16px;
+	direction: rtl;
+	display: block;
 
 	p {
 		font-family: $Font-Arabic;
@@ -117,7 +123,11 @@ $Font-Arabic: Neirizi, Nabi, "Vazirmatn FD", Vazirmatn, sans-serif;
 	}
 }
 
-h3 {
+ol {
+	marker: "۝";
+}
+
+h1,h2,h3,h4,h5,h6 {
 	color: #007fff;
 	text-align: center;
 }
