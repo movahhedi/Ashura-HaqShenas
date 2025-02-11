@@ -1,11 +1,8 @@
 @use "../Config" as *;
 
-$MarginGutter: 30mm;
-$MarginNormal: 5mm;
-
 @page {
 	size: a5 portrait;
-	margin: 10mm $MarginNormal;
+	margin: $MarginBlock $MarginNormal;
 }
 
 @page :right {

@@ -54,6 +54,13 @@ $Font-Arabic: Neirizi, Nabi, "Vazirmatn FD", Vazirmatn, sans-serif;
 	page-break-after: always;
 	page-break-inside: avoid;
 	break-inside: avoid;
+
+	&.pageCenter {
+		height: 100%;
+		display: block;
+		place-content: center;
+		height: calc(21cm - $MarginBlock - $MarginBlock);
+	}
 }
 
 .arabicText {
@@ -78,6 +85,14 @@ $Font-Arabic: Neirizi, Nabi, "Vazirmatn FD", Vazirmatn, sans-serif;
 	hr {
 		border-top: 1px solid #0080ff44;
 		margin: 10px;
+	}
+
+	&.center {
+		text-align: center;
+	}
+
+	&.big {
+		font-size: 20px;
 	}
 }
 
@@ -117,17 +132,94 @@ $Font-Arabic: Neirizi, Nabi, "Vazirmatn FD", Vazirmatn, sans-serif;
 		height: 100%;
 		object-fit: cover;
 		// mask-image: red;
-		filter: invert(66%) sepia(12%) saturate(3911%) hue-rotate(184deg) brightness(101%)
-			contrast(100%);
+		filter: invert(66%) sepia(12%) saturate(3911%) hue-rotate(184deg) brightness(101%) contrast(100%);
 		// mask-image: url("../images/ayah.png");
 	}
 }
 
-ol {
-	marker: "۝";
+.translation {
+	font-size: 12px;
+	color: #007fff;
+	margin-bottom: 5mm;
 }
 
-h1,h2,h3,h4,h5,h6 {
+ul {
+	margin-inline: 12mm;
+
+	&.columns2 {
+	columns: 2;
+	}
+}
+li {
+	span {
+		right: 2mm;
+	}
+}
+li::marker {
+	content: "۝";
+	// $Size: 26px;
+	width: auto;
+	height: 0;
+	// aspect-ratio: 564/640;
+	// border-radius: 500px;
+	color: #007fff;
+	display: inline-block;
+	text-align: center;
+	font-size: 20px;
+	margin-inline: 5px;
+	line-height: 0;
+	font-weight: 500;
+	display: block;
+	font-family: $Font-Arabic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	color: #007fff;
 	text-align: center;
+}
+h5 {
+	margin-block: 3mm 1.5mm;
+	text-align: start;
+}
+
+table {
+	border-collapse: collapse;
+	th, td {
+		font-size: 12px;
+		border: 1px solid black;
+		padding: 0.6mm 2mm;
+		text-align: center;
+	}
+	td:first-child {
+		font-size: 18px;
+		font-weight: 600;
+	}
+	&.big {
+		td {
+			font-size: 18px;
+			font-weight: 600;
+		}
+	}
+}
+
+.yasin {
+	width: auto;
+	object-fit: contain;
+	height: calc(21cm - $MarginBlock - $MarginBlock);
+}
+.cal {
+	display: flex;
+	flex-direction: column;
+	place-content: center;
+	place-items: center;
+	height: calc(21cm - $MarginBlock - $MarginBlock);
+
+	img {
+		height: 50%;
+	}
 }

@@ -1,5 +1,9 @@
 @use "sass:color" as color;
 
+$MarginGutter: 15mm;
+$MarginNormal: 5mm;
+$MarginBlock: 10mm;
+
 $Base-File-Url: "../";
 $Base-Img-Url: "#{$Base-File-Url}images/";
 
